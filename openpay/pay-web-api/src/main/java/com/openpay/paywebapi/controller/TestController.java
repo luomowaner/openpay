@@ -11,7 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test/controller")
 public class TestController {
 
-
+    /**
+     * test
+     * @return
+     */
     @ApiOperation("测试方法")
     @GetMapping("/test")
     public String test(){
