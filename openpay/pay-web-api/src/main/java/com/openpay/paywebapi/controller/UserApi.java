@@ -45,7 +45,6 @@ public class UserApi {
                 }else {
                     LoginUserRespVO loginUserRespVO = new LoginUserRespVO();
                     //TODO 用户其他信息
-
                     String token = tokenService.getToken(loginUserDto);
                     loginUserRespVO.setToken(token);
                     apiResponseBody.setResponseCode(ApiResponseBody.ResponseCodeEnum.OK.getCode());
